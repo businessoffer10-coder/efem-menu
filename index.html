@@ -1180,14 +1180,14 @@ async function sendWhatsApp(e){
     total:      +total.toFixed(2),
     order_type: addr ? 'delivery' : 'pickup'
   });
-  if(saved) toast('✅ Bestellung gespeichert #' + saved.id);
+  if(saved) toast('✅ Bestellung gespeichert');
 
   // ── Build WhatsApp message ──
   let msg='🍕 *BESTELLUNG – Efem Pizzeria & Grill*\n━━━━━━━━━━━━━━━━━━━━\n\n';
-  if(saved) msg += `🔢 *Bestellnr.: #${saved.id}*\n\n`;
+
   cart.forEach((c,i)=>{
     const line=c.price*c.qty;
-    msg+=`${i+1}. *${c.name}*`;
+    msg+=`*${c.name}*`;
     if(c.size) msg+=` (${c.size})`;
     msg+=`\n   x${c.qty}  →  €${line.toFixed(2)}\n`;
     if(c.extArr?.length) msg+=`   ➕ ${c.extArr.join(', ')}\n`;
