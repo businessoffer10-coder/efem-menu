@@ -593,6 +593,13 @@ const EXTRAS={
   ketchup:    {label:'Ketchup',price:1.00,cat:'sauce'},
   sweetChili: {label:'Sweet-Chili-Sauce',price:1.00,cat:'sauce'},
   cocktail:   {label:'Cocktailsauce',price:1.00,cat:'sauce'},
+  // 🥗 Dressings (für Salate)
+  dressingJoghurt:    {label:'Joghurt-Dressing',price:0,cat:'dressing'},
+  dressingFrench:     {label:'French Dressing',price:0,cat:'dressing'},
+  dressingItalien:    {label:'Italienisches Dressing',price:0,cat:'dressing'},
+  dressingJoppi:      {label:'Joppie-Dressing',price:0,cat:'dressing'},
+  dressingGranatapfel:{label:'Granatapfel-Dressing',price:0,cat:'dressing'},
+  dressingKnoblauch:  {label:'Knoblauch-Dressing',price:0,cat:'dressing'},
 };
 
 // ════════════ MENU DATA ════════════
@@ -724,16 +731,16 @@ const menu={
     {id:'69a',name:'Emlichheim-Auflauf',desc:'Kartoffel-Gratin, Hähnchenbruststreifen, Mais, Brokkoli, Sauce Hollandaise, mit Käse überbacken',price:10.00,ing:['Kartoffel-Gratin','Hähnchen','Mais','Brokkoli','Sauce Hollandaise','Käse'],freeSauce:'hollandaise',ex:['broetchen','kebap','haehnchen','thunfisch','bolognese','cheese','hirtenkase','mushrooms','olives','onions','paprika','mais','brokkoli','jalapenos','hollandaise','chili','cocktail']},
   ]},
   salat:{title:'Salat',icon:'🥗',items:[
-    {id:'70',name:'Chefsalat',desc:'Eisbergsalat, Tomaten, Gurken, Thunfisch, Hirtenkäse und Ei (+4 Brötchen nur €1,50)',price:9.00,ing:['Eisbergsalat','Tomaten','Gurken','Thunfisch','Hirtenkäse','Ei'],ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
-    {id:'71',name:'Gemischter Salat',desc:'Eisbergsalat, Tomaten, Gurken und Zwiebeln',sizes:{Klein:4.50,Groß:7.00},ing:['Eisbergsalat','Tomaten','Gurken','Zwiebeln'],ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
-    {id:'72',name:'Thunfisch Salat',desc:'Eisbergsalat, Tomaten, Gurken und Thunfisch',price:9.00,ing:['Eisbergsalat','Tomaten','Gurken','Thunfisch'],ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
-    {id:'73',name:'Cobansalat',desc:'Eisbergsalat, Tomaten, Gurken, Hirtenkäse, Peperoni und Zwiebeln',price:8.00,ing:['Eisbergsalat','Tomaten','Gurken','Hirtenkäse','Peperoni','Zwiebeln'],ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
-    {id:'74',name:'Hähnchensalat',desc:'Eisbergsalat, Tomaten, Gurken, Hähnchenfleisch, Zwiebeln und Käse',price:10.00,ing:['Eisbergsalat','Tomaten','Gurken','Hähnchen','Zwiebeln','Käse'],ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
-    {id:'75',name:'Spezialsalat',desc:'Eisbergsalat, Tomaten, Gurken, fr. Paprika, Mais, Thunfisch, Schinken, Ei und Käse',price:10.00,ing:['Eisbergsalat','Tomaten','Gurken','Paprika','Mais','Thunfisch','Schinken','Ei','Käse'],ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
-    {id:'76',name:'Hirtensalat',desc:'Eisbergsalat, Tomaten, Gurken, Hirtenkäse und Oliven',price:7.50,ing:['Eisbergsalat','Tomaten','Gurken','Hirtenkäse','Oliven'],ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
-    {id:'77',name:'Thunfisch Spezialsalat',desc:'Eisbergsalat, Tomaten, Gurken, Thunfisch, Oliven, Peperoni, Zwiebeln',price:10.00,ing:['Eisbergsalat','Tomaten','Gurken','Thunfisch','Oliven','Peperoni','Zwiebeln'],ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
-    {id:'79s',name:'Fit Industry Salat',desc:'Eisbergsalat, Hähnchenbruststreifen, Tomaten, Gurken, Mais, fr. Paprika und Zwiebeln',price:10.00,isNew:true,ing:['Eisbergsalat','Hähnchen','Tomaten','Gurken','Mais','Paprika','Zwiebeln'],ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
-    {id:'89s',name:'Kebap Salat',desc:'Eisbergsalat, Tomaten, Gurken, Kebap, Zwiebeln und Käse',price:10.00,ing:['Eisbergsalat','Tomaten','Gurken','Kebap','Zwiebeln','Käse'],ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
+    {id:'70',name:'Chefsalat',desc:'Eisbergsalat, Tomaten, Gurken, Thunfisch, Hirtenkäse und Ei (+4 Brötchen nur €1,50), wahlweise mit Dressing',price:9.00,ing:['Eisbergsalat','Tomaten','Gurken','Thunfisch','Hirtenkäse','Ei'],freeDressing:'dressingJoghurt',ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
+    {id:'71',name:'Gemischter Salat',desc:'Eisbergsalat, Tomaten, Gurken und Zwiebeln, wahlweise mit Dressing',sizes:{Klein:4.50,Groß:7.00},ing:['Eisbergsalat','Tomaten','Gurken','Zwiebeln'],freeDressing:'dressingJoghurt',ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
+    {id:'72',name:'Thunfisch Salat',desc:'Eisbergsalat, Tomaten, Gurken und Thunfisch, wahlweise mit Dressing',price:9.00,ing:['Eisbergsalat','Tomaten','Gurken','Thunfisch'],freeDressing:'dressingJoghurt',ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
+    {id:'73',name:'Cobansalat',desc:'Eisbergsalat, Tomaten, Gurken, Hirtenkäse, Peperoni und Zwiebeln, wahlweise mit Dressing',price:8.00,ing:['Eisbergsalat','Tomaten','Gurken','Hirtenkäse','Peperoni','Zwiebeln'],freeDressing:'dressingJoghurt',ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
+    {id:'74',name:'Hähnchensalat',desc:'Eisbergsalat, Tomaten, Gurken, Hähnchenfleisch, Zwiebeln und Käse, wahlweise mit Dressing',price:10.00,ing:['Eisbergsalat','Tomaten','Gurken','Hähnchen','Zwiebeln','Käse'],freeDressing:'dressingJoghurt',ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
+    {id:'75',name:'Spezialsalat',desc:'Eisbergsalat, Tomaten, Gurken, fr. Paprika, Mais, Thunfisch, Schinken, Ei und Käse, wahlweise mit Dressing',price:10.00,ing:['Eisbergsalat','Tomaten','Gurken','Paprika','Mais','Thunfisch','Schinken','Ei','Käse'],freeDressing:'dressingJoghurt',ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
+    {id:'76',name:'Hirtensalat',desc:'Eisbergsalat, Tomaten, Gurken, Hirtenkäse und Oliven, wahlweise mit Dressing',price:7.50,ing:['Eisbergsalat','Tomaten','Gurken','Hirtenkäse','Oliven'],freeDressing:'dressingJoghurt',ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
+    {id:'77',name:'Thunfisch Spezialsalat',desc:'Eisbergsalat, Tomaten, Gurken, Thunfisch, Oliven, Peperoni, Zwiebeln, wahlweise mit Dressing',price:10.00,ing:['Eisbergsalat','Tomaten','Gurken','Thunfisch','Oliven','Peperoni','Zwiebeln'],freeDressing:'dressingJoghurt',ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
+    {id:'79s',name:'Fit Industry Salat',desc:'Eisbergsalat, Hähnchenbruststreifen, Tomaten, Gurken, Mais, fr. Paprika und Zwiebeln, wahlweise mit Dressing',price:10.00,isNew:true,ing:['Eisbergsalat','Hähnchen','Tomaten','Gurken','Mais','Paprika','Zwiebeln'],freeDressing:'dressingJoghurt',ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
+    {id:'89s',name:'Kebap Salat',desc:'Eisbergsalat, Tomaten, Gurken, Kebap, Zwiebeln und Käse, wahlweise mit Dressing',price:10.00,ing:['Eisbergsalat','Tomaten','Gurken','Kebap','Zwiebeln','Käse'],freeDressing:'dressingJoghurt',ex:['broetchen','kebap','haehnchen','thunfisch','cheese','hirtenkase','mozzarella','olives','onions','paprika','mais','tomaten','jalapenos','peperoni','ei','hollandaise','tzatziki','mayo','knoblauch','remoulade','cocktail']},
   ]},
   snacks:{title:'Snacks & Dips',icon:'🍗',items:[
     {id:'78',name:'Brot',desc:'Kleines, mittleres oder großes Brot',sizes:{Klein:1.50,Mittel:2.00,Groß:2.50},ing:['Brot'],ex:[]},
@@ -857,7 +864,7 @@ function openModal(id,e){
   const item=findItem(id); if(!item) return;
   const keys=item.sizes?Object.keys(item.sizes):null;
   const sz=selSizes[id]||(keys?keys[0]:null);
-  ms={item,size:sz,extras:{},removed:{},note:'',editIdx:-1,freeSauce:item.freeSauce||null};
+  ms={item,size:sz,extras:{},removed:{},note:'',editIdx:-1,freeSauce:item.freeSauce||null,freeDressing:item.freeDressing||null};
   document.getElementById('modalNum').textContent='Nr. '+item.id;
   document.getElementById('modalName').textContent=item.name;
   document.getElementById('modalAddBtn').textContent='In den Warenkorb →';
@@ -867,7 +874,7 @@ function openModal(id,e){
 
 function openEditModal(idx){
   const c=cart[idx]; const item=findItem(c.itemId); if(!item) return;
-  ms={item,size:c.size,extras:{...c.extrasObj},removed:{...c.removedObj},note:c.note||'',editIdx:idx,freeSauce:c.freeSauce||item.freeSauce||null};
+  ms={item,size:c.size,extras:{...c.extrasObj},removed:{...c.removedObj},note:c.note||'',editIdx:idx,freeSauce:c.freeSauce||item.freeSauce||null,freeDressing:c.freeDressing||item.freeDressing||null};
   document.getElementById('modalNum').textContent='Nr. '+item.id;
   document.getElementById('modalName').textContent=item.name;
   document.getElementById('modalAddBtn').textContent='Änderungen speichern ✓';
@@ -882,6 +889,22 @@ function buildModalBody(){
   if(item.sizes){
     const keys=Object.keys(item.sizes);
     h+=`<div class="modal-section-label">Größe wählen</div><div class="modal-size-row">${keys.map(s=>`<button class="modal-size-btn${s===size?' selected':''}" onclick="modalSize('${s}')"><span class="ms-label">${s}</span><span class="ms-price">€${item.sizes[s].toFixed(2)}</span></button>`).join('')}</div>`;
+  }
+
+  // ── FREE DRESSING (Salate) ──
+  if(item.freeDressing){
+    const DRESSINGS=['dressingJoghurt','dressingFrench','dressingItalien','dressingJoppi','dressingGranatapfel','dressingKnoblauch'];
+    const cur = ms.freeDressing || item.freeDressing;
+    h+=`<div class="free-sauce-section" style="border-color:rgba(251,191,36,.3);background:rgba(251,191,36,.06);">
+      <div class="free-sauce-label" style="color:#fbbf24;">🥗 Dressing wählen <span class="free-sauce-badge" style="background:rgba(251,191,36,.2);color:#fbbf24;">WAHLWEISE INKLUSIVE</span></div>
+      <div class="free-sauce-grid">
+        ${DRESSINGS.map(k=>{
+          const ex=EXTRAS[k]; if(!ex) return '';
+          const label = ex.label.replace('-Dressing','').replace(' Dressing','');
+          return `<button class="free-sauce-btn${cur===k?' selected':''}" style="${cur===k?'border-color:#fbbf24;background:rgba(251,191,36,.15);color:#fbbf24;':''}" onclick="setFreeDressing('${k}')">${label}</button>`;
+        }).join('')}
+      </div>
+    </div>`;
   }
 
   // ── FREE SAUCE ──
@@ -943,6 +966,11 @@ function setFreeSauce(k){
   });
 }
 
+function setFreeDressing(k){
+  ms.freeDressing=k;
+  buildModalBody();
+}
+
 function isFamilie(){
   return ms.size==='Familie';
 }
@@ -1002,19 +1030,19 @@ function updateModalTotal(){
 }
 
 function confirmAdd(){
-  const {item,size,extras,removed,note,editIdx,freeSauce}=ms;
+  const {item,size,extras,removed,note,editIdx,freeSauce,freeDressing}=ms;
   const base=item.sizes?(item.sizes[size]||0):(item.price||0);
   let ext=0;
   const extArr=[]; Object.entries(extras).forEach(([k,v])=>{if(v&&EXTRAS[k]){ext+=getExtraPrice(k);extArr.push(EXTRAS[k].label);}});
   const remArr=Object.entries(removed).filter(([,v])=>v).map(([k])=>k);
-  // add freeSauce label if changed from default
-  const freeSauceLabel = freeSauce && EXTRAS[freeSauce] ? EXTRAS[freeSauce].label.replace('Extra ','') : null;
+  const freeSauceLabel    = freeSauce    && EXTRAS[freeSauce]    ? EXTRAS[freeSauce].label.replace('Extra ','')  : null;
+  const freeDressingLabel = freeDressing && EXTRAS[freeDressing] ? EXTRAS[freeDressing].label : null;
   const price=base+ext;
   if(editIdx>=0){
-    cart[editIdx]={...cart[editIdx],size,price,extArr,remArr,note,extrasObj:{...extras},removedObj:{...removed},freeSauce,freeSauceLabel};
+    cart[editIdx]={...cart[editIdx],size,price,extArr,remArr,note,extrasObj:{...extras},removedObj:{...removed},freeSauce,freeSauceLabel,freeDressing,freeDressingLabel};
     closeModal(); updateCartUI(); toast('✓ Änderungen gespeichert');
   } else {
-    addEntry(item,size,price,extArr,remArr,{...extras},{...removed},note,freeSauce,freeSauceLabel);
+    addEntry(item,size,price,extArr,remArr,{...extras},{...removed},note,freeSauce,freeSauceLabel,freeDressing,freeDressingLabel);
     closeModal(); toast('✓ '+item.name+' hinzugefügt');
   }
 }
@@ -1023,10 +1051,10 @@ function closeModal(){ document.getElementById('modalOverlay').classList.remove(
 function overlayClick(e){ if(e.target===document.getElementById('modalOverlay')) closeModal(); }
 
 // ════════════ CART ════════════
-function addEntry(item,size,price,extArr,remArr,extrasObj,removedObj,note='',freeSauce=null,freeSauceLabel=null){
-  const canMerge=!extArr.length&&!remArr.length&&!note&&!freeSauce;
-  const existing=canMerge&&cart.find(c=>c.itemId===item.id&&c.size===size&&!c.extArr?.length&&!c.remArr?.length&&!c.note&&!c.freeSauce);
-  if(existing){existing.qty++;} else {cart.push({itemId:item.id,name:item.name,size,price,qty:1,extArr:extArr||[],remArr:remArr||[],note:note||'',extrasObj:extrasObj||{},removedObj:removedObj||{},freeSauce,freeSauceLabel});}
+function addEntry(item,size,price,extArr,remArr,extrasObj,removedObj,note='',freeSauce=null,freeSauceLabel=null,freeDressing=null,freeDressingLabel=null){
+  const canMerge=!extArr.length&&!remArr.length&&!note&&!freeSauce&&!freeDressing;
+  const existing=canMerge&&cart.find(c=>c.itemId===item.id&&c.size===size&&!c.extArr?.length&&!c.remArr?.length&&!c.note&&!c.freeSauce&&!c.freeDressing);
+  if(existing){existing.qty++;} else {cart.push({itemId:item.id,name:item.name,size,price,qty:1,extArr:extArr||[],remArr:remArr||[],note:note||'',extrasObj:extrasObj||{},removedObj:removedObj||{},freeSauce,freeSauceLabel,freeDressing,freeDressingLabel});}
   updateCartUI();
   const card=document.getElementById('card-'+item.id);
   if(card){card.classList.add('in-cart');const b=card.querySelector('.add-btn');if(b){b.classList.add('added');b.textContent='✓ Im Warenkorb';}}
@@ -1064,6 +1092,7 @@ function renderCart(){
     const line=c.price*c.qty; total+=line;
     const meta=[];
     if(c.size) meta.push(`<span class="m-size">${c.size} · €${c.price.toFixed(2)} je</span>`);
+    if(c.freeDressingLabel) meta.push(`<span class="m-extras">🥗 ${c.freeDressingLabel}</span>`);
     if(c.freeSauceLabel) meta.push(`<span class="m-extras">🆓 ${c.freeSauceLabel}</span>`);
     if(c.extArr?.length) meta.push(`<span class="m-extras">＋ ${c.extArr.join(', ')}</span>`);
     if(c.remArr?.length) meta.push(`<span class="m-removed">✕ Ohne: ${c.remArr.join(', ')}</span>`);
@@ -1202,7 +1231,8 @@ async function sendWhatsApp(e){
     qty:   c.qty,
     price: c.price,
     line:  +(c.price * c.qty).toFixed(2),
-    sauce:    c.freeSauceLabel || null,
+    sauce:    c.freeSauceLabel    || null,
+    dressing: c.freeDressingLabel || null,
     extras:   c.extArr || [],
     removed:  c.remArr || [],
     note:  c.note  || null
@@ -1226,6 +1256,7 @@ async function sendWhatsApp(e){
     msg+=`*${c.name}*`;
     if(c.size) msg+=` (${c.size})`;
     msg+=`\n   x${c.qty}  →  €${line.toFixed(2)}\n`;
+    if(c.freeDressingLabel) msg+=`   🥗 Dressing: ${c.freeDressingLabel}\n`;
     if(c.freeSauceLabel) msg+=`   🆓 Sauce: ${c.freeSauceLabel}\n`;
     if(c.extArr?.length) msg+=`   ➕ ${c.extArr.join(', ')}\n`;
     if(c.remArr?.length) msg+=`   ❌ Ohne: ${c.remArr.join(', ')}\n`;
