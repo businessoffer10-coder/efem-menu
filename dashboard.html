@@ -444,6 +444,7 @@ function buildCard(o, isNew=false){
     <div class="card-item">
       <div class="ci-left">
         <div class="ci-name">${it.qty}× ${esc(it.name)}${it.size?` <span class="ci-size">(${esc(it.size)})</span>`:''}</div>
+        ${it.dressing?`<div class="ci-extras">🥗 ${esc(it.dressing)}</div>`:''}
         ${it.sauce?`<div class="ci-extras">🆓 ${esc(it.sauce)}</div>`:''}
         ${it.extras?.length?`<div class="ci-extras">➕ ${it.extras.map(esc).join(', ')}</div>`:''}
         ${it.removed?.length?`<div class="ci-removed">❌ Ohne: ${it.removed.map(esc).join(', ')}</div>`:''}
